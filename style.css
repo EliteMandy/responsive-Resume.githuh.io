@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&dispaly=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background: #000000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+.container{
+    position:relative;
+    width:100%;
+    max-width:1000px;
+    min-height:1000px;
+    background:#4a558a;
+    margin:50px;
+    display:grid;/*to show the grid and display flex to show the flex container*/
+    border-radius:px;
+    grid-template-columns: 1fr 2fr; /*for colounm alignment */
+}
+.container .left{
+    position:relative;
+    background:rgb(35, 46, 96);
+    padding:40px;
+}
+.container .right{
+    position:relative;
+    background:rgb(22, 105, 200);
+    padding:40px;
+}
+.profiletxt{
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(191, 20, 20);
+}
+.profiletxt .imgbox{
+    position : relative;
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    overflow:hidden; /*this is very important understsnd this thing for later use */
+}
+.profiletxt .imgbox .img{
+    align-items: center;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.profiletxt h1{
+    text-align: center;
+    color:#ffff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:2em;
+}
+.profiletxt h1 span{
+    font-size:1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+}
+.left .contactinfo h1{
+    font-size:1.5em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.left .contactinfo span{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    font-size: 1em;
+}
+.contactinfo{
+    padding:20px;
+}
+.title{
+    padding-bottom: 20px;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight:600;
+}
+.contactinfo ul{
+    position:relative;
+}
+.contactinfo ul li{
+    position:relative;
+    list-style: none;
+    margin:10px 0;
+    cursor: pointer;
+
+}
+.contactinfo ul li .icon{
+    display:inline-block;
+    color:rgb(221, 105, 10);
+}
+.contactinfo ul li span{
+    color:aqua;
+    font-size:18px;
+}
+.contactinfo ul li span a{
+    color:aqua;
+    font-weight: 300;
+    font-size:18px;
+    text-decoration: none;
+}
+.contactinfo_education ul li{
+    color:aqua;
+    font-size:18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contactinfo_education ul li{
+    list-style: none;
+    padding:10px;
+}
+.contactinfo_education li{
+    margin-bottom: 15px;
+}
+.contactinfo_education ul li h5{
+    font-weight: 300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(255, 175, 1)
+}
+.contactinfo_education ul li h4{
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(246, 236, 236);
+}
+.contactinfo_education{
+    padding:20px;
+}
+.left .contactinfo_education h1{
+    font-size:1.5em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
